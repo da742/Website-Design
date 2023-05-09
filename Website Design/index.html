@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Nothing</a></li>
+                <li><a href="#about">Much</a></li>
+                <li><a href="#services">This</a></li>
+                <li><a href="#portfolio">And</a></li>
+                <li><a href="#contact">That</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Time College Student</p>
+            <h1>Hi, I'm <span>Danke</span><br>From Juniata College</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG_4391.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Yet another average college student you'd find on 1700 Moore Street with a knack for procrastination and love for caffeine. My hobbies include scrolling through social media, binge-watching Netflix, and avoiding responsibility like the plague. But hey, I still manage to scrape by with decent grades and a smile on my face (which is a clear sign that I'm either delusional or really good at faking it). More than willing to provide half-hearted help to others, all you need to do is ask. Just don't expect me to take life too seriously tho.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Professional Plumbing</span><br>Adept at various plumbing work</li>
+                        <li><span>Exam Cramming</span><br>Only study the night before the exam</li>
+                        <li><span>Time Management</span><br>Trying to show up for all my classes</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Campus Tour Guide Wannabe</li>
+                        <li><span>2021 - 2023</span><br>Baker Food Victim</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Bachelor of Science in progress</li>
+                        <li><span>2020 - 2020</span><br>Took a gap year</li>
+                        <li><span>2016 - 2020</span><br>Graduated from high school, I guess</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Plumbing</h2>
+                <p>Proud to provide Huntingdon County, PA, and the surrounding area with quality plumbing services. With over 20 years of working as a plumber and electrician in the area, I know the exact problems that can plague homes and businesses most frequently.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Electrical</h2>
+                <p>I can upgrade your electrical panel when it becomes necessary. If you are installing new appliances, such as a hot tub, air conditioner, or refrigerator, your current panel might not have enough power to keep those appliances running.</p>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Sewer Services</h2>
+                <p> I'm here to prevent those headaches and costly repairs from happening. My quality sewer maintenance services help you to keep your sewer from working abnormally, and my team is here when you notice things are not working as they should be.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Recently</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/IMG_5293 (1).png">
+                <div class="layer">
+                    <h3>Michael Chan Jordan</h3>
+                    <p>This is a picture of my friend treating another friend's head like a basketball.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/IMG_7739.png">
+                <div class="layer">
+                    <h3>Time Square</h3>
+                    <p>With its neon lights and billboards, Times Square is one of the most famous landmarks in the city, located at the intersection of Broadway and 7th Avenue.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/IMG_8567.png">
+                <div class="layer">
+                    <h3>The Met</h3>
+                    <p>The collection spans 5,000 years of world culture, from prehistory to the present and from every part of the globe.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023. <i class="fas fa-heart"></i></a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< link >' 
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
